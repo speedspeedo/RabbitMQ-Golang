@@ -27,7 +27,7 @@ func bodyForm(args []string) string {
 }
 
 func main() {
-	// Connect to RabbitMQ server
+	// Connect to RabbitMQ serve
 	conn, err := amqp.Dial("amqp://guest:guest@localhost:5672/")
 	failOnError(err, "Failed to connect RabbitMQ")
 	defer conn.Close()
